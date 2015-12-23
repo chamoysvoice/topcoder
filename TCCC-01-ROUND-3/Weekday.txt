@@ -1,0 +1,41 @@
+Source: https://community.topcoder.com/stat?c=problem_statement&pm=46
+
+Problem Statement
+
+Given that January 1, 1990 falls on a Monday, determine which weekday a given
+date (restricted to the years 1990-1999) falls on.
+
+The program will take as input three integers representing a valid month, day,
+and year, from the years 1990-1999. The output will be a string containing a
+case sensitive day of the week :
+
+         (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
+
+Here are the number of days for each month in 1990-1999 :
+
+(Jan, Mar, May, Jul, Aug, Oct, Dec) = 31; (Apr, Jun, Sep, Nov) = 30;
+(Feb)=28 except on 1992, 1996 (Feb)=29  (leap year)
+
+NOTE : You are not allowed to use any external libraries for this problem
+       (ie no import statements)
+
+Here is the method signature :
+
+public String getDay(int month, int day, int year);
+
+We will check to make sure the input to this problem is valid.
+(ie date validity, year restriction, etc)
+
+Example :
+
+Input : 4 26 1999
+Output : Monday
+
+Definition
+
+Class:	Weekday
+Method:	getDay
+Parameters:	int, int, int
+Returns:	String
+Method signature:	String getDay(int param0, int param1, int param2)
+(be sure your method is public)
