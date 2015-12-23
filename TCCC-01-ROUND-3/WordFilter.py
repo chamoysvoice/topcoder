@@ -1,9 +1,5 @@
 class WordFilter:
     def strip(self, pattern, buffer):
-        pattern = str(pattern)
-        buffer = str(buffer)
-        if len(pattern) > len(buffer):
-            return buffer
         while True:
             found = False
             if len(pattern) > len(buffer):
