@@ -1,0 +1,53 @@
+Source: https://community.topcoder.com/stat?c=problem_statement&pm=73
+
+Problem Statement
+
+Class Name: Race
+Method Name: closestCheckPoint
+Parameters: int[], int[], int[]
+Returns: int
+
+Three runners are running a race.  There are n checkpoints numbered 0
+through n-1 along the course of the race.  The time each runner crosses each
+checkpoint is recorded, in seconds since the beginning of the race.  As the
+race progresses, the time counts up.
+Implement a class Race, which contains a method closestCheckPoint.  The
+method takes three int[]'s as parameters.  The int[]'s contain the times the
+runners crossed the checkpoints, in seconds, one int[] for each runner.  The
+0th element of the first int[] is the time the first runner crossed the 0th
+checkpoint.  The 0th element of the second int[] is the time the second runner
+crossed the 0th checkpoint, etc... The method returns an int that is the number
+of the checkpoint at which the three runners are closest (the time between the
+first and last runners' arrivals at the checkpoint is the minimum).  If there
+are multiple checkpoints with the same closeness, the last (highest numbered)
+of these checkpoints is returned.
+
+The method signature is:
+public int closestCheckPoint(int[] runner1, int[] runner2, int[] runner3);
+*runner1, runner2, and runner3 will have the same number of elements.  There
+will be at least 1 element and at most 100 elements in each int[].  The
+elements will be between 0 and 30000.
+
+Note:
+-Keep in mind runners may cheat and therefore the int[] may not be an
+increasing sequence.
+
+Examples:
+runner1 = {10,40,90}
+runner2 = {12,37,87}
+runner3 = {15,32,88}
+returns: 2
+
+runner1 = {3,4,5,8}
+runner2 = {3,4,6,8}
+runner3 = {3,5,7,8}
+returns: 3
+
+Definition
+
+Class:	Race
+Method:	closestCheckPoint
+Parameters:	int[], int[], int[]
+Returns:	int
+Method signature:	int closestCheckPoint(int[] param0, int[] param1, int[] param2)
+(be sure your method is public)
